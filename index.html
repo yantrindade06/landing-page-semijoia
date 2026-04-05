@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerrô Semijoias</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-gem"></i>
+                    <span>Lerro Semijoias</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+               <span class="dourado-text"> Semijoias que</span> <span class="gradient-text">Encantam</span>
+            </h1>
+            <p class="hero-subtitle">
+                Peças exclusivas banhadas a ouro 18k e rodio. Brilho duradouro, estilo único.
+            </p>
+            <div class="hero-buttons">
+                <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+                <a href="#contato" class="btn btn-secondary">WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="product-float">
+                <img src="imagens/lerrowallpaper.jpeg" alt="Colar de semijoias">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossa Coleção Exclusiva</h2>
+            <div class="produtos-grid" id="produtosGrid">
+                
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2>Por que escolher nossas semijoias?</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-crown"></i>
+                            <h3>Banho Duradouro</h3>
+                            <p>Ouro 18k e rodio de alta qualidade</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Entrega Rápida</h3>
+                            <p>Em até 3 dias úteis em todo Brasil</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>7 Dias para Troca</h3>
+                            <p>Garantia de satisfação total</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="imagens/BrincoGotaIA.jpeg" alt="Semijoias">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Peças limitadas! Garanta a sua agora</h2>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20ver%20a%20coleção!" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Lerrô Semijoias</span>
+                    </div>
+                    <p>Semijoias finas com banho duradouro. Estilo e qualidade para você brilhar!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-whatsapp"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@lerrosemijoias.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lerrô Semijoias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Seu Carrinho</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                
+            </div>
+            <div class="cart-total">
+                <h4>Total: <span id="cartTotal">R$ 0,00</span></h4>
+            </div>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20itens%20no%20carrinho!" class="btn btn-whatsapp" target="_blank">
+                Finalizar no WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
